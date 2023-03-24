@@ -1,0 +1,91 @@
+body {
+    background: -webkit-linear-gradient(rgb(231, 148, 69) 17cm, rgb(103, 161, 236)42cm,rgb(103, 161, 236)70%, rgb(231, 148, 69) 100%);
+    height: 50cm;
+}
+
+#title {
+    background-image: url("title_pic1.jpg");
+    background-size: 100%;
+    height: 17cm;
+    margin-left: -0.5cm;
+    margin-right: -0.5cm;
+    margin-top: -0.5cm;
+    margin-bottom: 1cm;
+}
+
+#title h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1cm;
+}
+
+#title img {
+    /* transform: scaleX(-1); */
+    width: 3cm;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+@keyframes drive {
+    0% {transform: scaleX(-1);}
+    100% {transform: translate(20cm, 0) scaleX(-1);};
+}
+
+.new_place {
+    height: 10cm;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.new_place .about {
+    width: 28%;
+    float: left;
+    /* padding: 0.5cm; */
+    /* background-color: black; */
+    padding-top: 0;
+}
+
+.new_place .about .place_name {
+    font-size: 40;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color:rgb(243, 216, 190);
+    vertical-align: top;
+
+    font-style: italic;
+    /* background-color: red; */
+}
+
+.new_place .about .place_info {
+    font-size: 30;
+    color:rgb(243, 216, 190);
+    font-weight: 200;
+}
+
+.new_place .photos {
+    width: 50%;
+    float: left;
+    /* padding-left: 0.25cm; */
+    /* padding-right: 0.25cm; */
+    padding-top: 1cm;
+    
+}
+
+/* .new_place .photos img {
+    width: 20.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    float: left;
+} */
+
+.new_place .photos img:hover {
+    width: 22.5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
